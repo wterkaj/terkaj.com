@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+
+  
+  <link rel="stylesheet" type="text/css" href="http://www.terkaj.com/tswnavbar.css">
+
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>terkaj.com - tools</title></head><body style="width: 1187px;" class="">
+<div style="text-align: center;"><big style="color: rgb(0, 102, 0);"><big><big><big><span style="font-weight: bold;">terkaj.com</span></big></big></big></big><br>
+</div>
+
+<br>
+
+<hr style="width: 100%; height: 2px;"><br>
+
+<table style="text-align: left; height: 1648px; width: 1189px;" border="0" cellpadding="2" cellspacing="2">
+
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; width: 194px;">
+      <div id="tswcssbuttons">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publ.html">Publications</a></li>
+        <li><a href="ontology.html">Ontology</a></li>
+        <li><a href="tools.html">Tools</a></li>
+      </ul>
+      </div>
+      <br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top; width: 1280px; font-weight: bold;">
+      <div style="text-align: center;"> </div>
+      <div style="text-align: left;"> <span style="font-weight: bold; color: rgb(0, 102, 0);"><big><big><big>Tools</big></big></big></span><span style="font-weight: normal;"></span><br>
+      </div>
+      <span style="font-weight: normal;"></span><span style="font-weight: normal;"><br>
+This page lists some of the prototype software tools related to my
+works<span style="font-weight: bold;">:</span></span><br>
+      <ul>
+        <li><a href="tools.html#DigitalFactory3D">Digital Factory 3D</a></li>
+        <li><a href="tools.html#OntoGui">OntoGui</a></li>
+        <li><a href="tools.html#ExpressToOwl">ExpressToOwl (available
+for download)</a><span style="font-weight: normal;"></span><span style="font-weight: normal;"> </span></li>
+      </ul>
+      <span style="font-weight: normal;">More details can be found in
+readme files and</span><span style="font-weight: normal;"> related <a href="publ.html" target="_blank">publications</a>.</span><span style="font-weight: normal;"><br>
+      <br>
+      </span><big><big><small><br>
+      </small></big></big> <span style="font-weight: normal;"> </span>
+      <big><big><small><a name="OntoGui"></a><span style="text-decoration: underline;">OntoGui/OntoGuiWeb</span></small></big></big><br>
+      <p style="font-weight: bold;" class="MsoBodyText"><span lang="EN-US"><span style="font-weight: normal;">OntoGui is a prototype
+software
+tool that can be employed in the management and instantiation of
+ontology A-box modules. This tool mainly aims at supporting:</span></span></p>
+      <ul>
+        <li><span style="font-family: Symbol;" lang="EN-US"><span style=""><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;"></span></span></span><span lang="EN-US"><span style="font-weight: normal;">The fast evaluation of
+ontology
+T-box by concurrently instantiating a corresponding A&#8209;box, following a </span><i style="font-weight: normal;">Test-driven development</i><span style="font-weight: normal;"> approach.</span></span></li>
+        <li><span lang="EN-US"><span style="font-weight: normal;">The
+generation of RDF data sets
+to be used as input for other ontology-based applications, without
+needing to
+develop complex customized graphical user interfaces or data converters.</span></span></li>
+      </ul>
+      <p style="font-weight: bold;" class="MsoBodyText"><span lang="EN-US"><span style="font-weight: normal;"><span style="font-weight: bold;">OntoGui</span> was first developed
+as a desktop application in C++ language making use of the <a href="http://librdf.org/" target="_blank">Redland RDF Libraries</a> and <a href="https://www.wxwidgets.org/" target="_blank">wxWidgets
+Cross-Platform GUI Library</a>.&nbsp; </span></span><span style="font-weight: normal;">The</span> <span style="font-weight: normal;">documentation and the academic version are available <a href="https://virtualfactory.gitbook.io/virtual-learning-factory-toolkit/tools/ontogui" target="_blank">here</a>.</span></p>
+      <p style="font-weight: bold;" class="MsoBodyText"><span lang="EN-US"><span style="font-weight: normal;"><span style="font-weight: bold;">OntoGuiWeb</span> is the web application version of OntoGui, developed in HTML-JavaScript. Both the <a href="https://virtualfactory.gitbook.io/vlft/tools/ontoguiweb" target="_blank">documentation</a> and a <a href="https://difactory.github.io/DF/tools/OntoGuiWeb.html">demo</a> are available online.<br>
+      </span></span></p>
+      <p style="font-weight: bold;" class="MsoBodyText"><span lang="EN-US"><span style="font-weight: normal;">The main window of </span></span><span lang="EN-US"><span style="font-weight: normal;">OntoGui/</span></span><span lang="EN-US"><span style="font-weight: normal;">OntoGuiWeb</span></span><span lang="EN-US"><span style="font-weight: normal;"> consists of
+a
+control panel for the creation and loading of ontologies from both a
+file-based repository and other more performing RDF stores (e.g. <a href="https://jena.apache.org/documentation/fuseki2/" target="_blank">Fuseki</a>, <a href="http://www.stardog.com/" target="_blank">Stardog</a>). The
+control panel provides also access to a set of functional
+modules, including:</span></span></p>
+
+      <ul>
+        <li><span style="font-weight: normal;" lang="EN-US"><span style="font-weight: bold;">SystemDesign</span>, i.e. a tool that
+supports the design of a production system and in particular the
+definition of part types, process plans, machines and buffers. The
+process plans can be decomposed into process step characterized by
+precedence relations. Moreover, the process steps can be assigned to
+the elements of the production systems</span></li>
+        <li><span style="font-weight: normal;" lang="EN-US"><span style="font-weight: bold;">Utilities</span>, i.e. </span><span style="white-space: pre; font-weight: normal;" data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMmZ1bmN0aW9uYWxpdGllcyUyMHRvJTIwZ2VuZXJhdGUlMjByZXBvcnRzJTIwYW5kJTIwZXhjaGFuZ2UlMjBmaWxlcyUyMGJhc2VkJTIwb24lMjB0aGUlMjBjb250ZW50cyUyMG9mJTIwdGhlJTIwY3VycmVudGx5JTIwbG9hZGVkJTIwb250b2xvZ3klMjBtb2R1bGVzJTNBJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlMkMlMjJzZWxlY3Rpb25zJTIyJTNBJTVCJTVEJTdEJTVEJTJDJTIya2V5JTIyJTNBJTIyMWM5OGYwYTBiOGFiNGYyODkzM2Y5YTI3MTE1MTU0YzMlMjIlN0QlNUQlMkMlMjJrZXklMjIlM0ElMjIxMmQzMzk0YjM4MGU0YWRlYjBjM2VlZGVlNWM3MDM4ZiUyMiU3RCU1RCUyQyUyMmtleSUyMiUzQSUyMjVlYjNmNjQxODhkNTQ4Yzk5MzAwMGI0YTM1MzVjMzcwJTIyJTdE">a<br>
+tool providing functionalities to generate reports and exchange files<br>
+based on the contents of the currently loaded ontology modules.</span><span style="font-weight: normal;" lang="EN-US"> <br>
+          </span></li>
+
+        <li><span style="font-weight: normal;" lang="EN-US"></span><span lang="EN-US">IndividualsManager/AssetDesign</span><span style="font-weight: normal;" lang="EN-US">, i.e. a general purpose
+tool for the exploration, generation and characterization
+of OWL individuals.<span style="font-weight: bold;"></span></span><br>
+</li>
+      </ul><span style="font-weight: normal;"></span><span style="font-weight: normal;"></span><br>
+&nbsp;<br>
+      <span style="font-weight: normal;"><br>
+      </span> <span style="font-weight: normal;"><span style="font-weight: bold;"></span> </span><iframe src="https://www.youtube.com/embed/lKpwa79ooqE" height="315" width="420"> </iframe>
+      <p class="MsoBodyText" style="margin-left: 18pt; text-indent: -18pt; font-weight: bold;"><span lang="EN-US"></span><span style="font-weight: normal;">Related
+publications:</span> </p>
+      <ul>
+        <li style="font-weight: normal;"><a href="publ.html#2015_TerkajSojic" target="_blank">Terkaj W, Sojic A
+(2015)</a>
+Ontology-based Representation of
+IFC
+EXPRESS rules: an enhancement of the ifcOWL ontology.</li>
+        <li style="font-weight: normal;"><a href="publ.html#2016_SojicTerkajContiniSacco" target="_blank">Sojic A,
+Terkaj
+W, Contini G, Sacco M (2016)</a> Modularising ontology and designing
+inference patterns to personalise health condition assessment: the case
+of obesity.</li>
+        <li style="font-weight: bold;"><a target="_blank" href="publ.html#2017_Terkaj">Terkaj
+W (2017)</a> OntoGui: a
+Graphical User Interface for Rapid Instantiation of OWL Ontologies.</li>
+      </ul>
+      <br>
+      <big><big><small><a name="DigitalFactory3D"></a><span style="text-decoration: underline;">Digital Factory 3D</span><br>
+      </small></big></big><span style="font-weight: normal;"><a href="https://virtualfactory.gitbook.io/vlft/tools/vebjs" target="_blank">VEB.js</a> (</span><span data-key="44ba5ddb07c04ffa874a1f5b649484b1"><span style="font-weight: normal;" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:1"></span><strong style="font-weight: normal;" data-slate-leaf="true" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:2" class="r-b88u0q">V</strong><span style="font-weight: normal;" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:3">irtual </span><strong style="font-weight: normal;" data-slate-leaf="true" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:4" class="r-b88u0q">E</strong><span style="font-weight: normal;" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:5">nvironment based on </span><strong style="font-weight: normal;" data-slate-leaf="true" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:6" class="r-b88u0q">B</strong><span style="font-weight: normal;" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:7">abylon.</span><strong style="font-weight: normal;" data-slate-leaf="true" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:8" class="r-b88u0q">js</strong><span style="font-weight: normal;" data-offset-key="44ba5ddb07c04ffa874a1f5b649484b1:9">) is a reconfigurable model-driven virtual environment application based on </span></span><a href="https://www.babylonjs.com/" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-1i6wzkk r-lrvibr" style="font-weight: normal;"><span data-key="29e9c01332ca4fcdaa11d55ff080168f" data-rnw-int-class="nearest_263-1644_265-1645-240__"><span data-key="2c9c59c563ff4a9a87e4d9f063df8747"><span data-offset-key="2c9c59c563ff4a9a87e4d9f063df8747:0">Babylon.js</span></span></span></a><span style="font-weight: normal;" data-key="7c0815b190c943f9a0a78647d0fb84f6"><span data-offset-key="7c0815b190c943f9a0a78647d0fb84f6:0">,</span><strong data-slate-leaf="true" data-offset-key="7c0815b190c943f9a0a78647d0fb84f6:1" class="r-b88u0q"> </strong><span data-offset-key="7c0815b190c943f9a0a78647d0fb84f6:2">a complete JavaScript framework and graphics engine for building 3D applications with HTML5 and </span></span><a href="https://www.khronos.org/webgl/" data-rnw-int-class="link____" class="css-4rbku5 css-1dbjc4n r-1loqt21 r-1471scf r-1otgn73 r-1i6wzkk r-lrvibr" style="font-weight: normal;"><span data-key="585d8b0525ae481cab8dad67dc1d903e" data-rnw-int-class="nearest_263-1644_265-1645-240__"><span data-key="9880a86869e0482d97ddfc44faaa5cfa"><span data-offset-key="9880a86869e0482d97ddfc44faaa5cfa:0">WebGL</span></span></span></a><span style="font-weight: normal;" data-key="cfab1375173e4c7bab34a88b718569a9" data-slate-fragment="JTdCJTIyb2JqZWN0JTIyJTNBJTIyZG9jdW1lbnQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJibG9jayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJwYXJhZ3JhcGglMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlN0QlMkMlMjJub2RlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMlZFQi5qcyUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJib2xkJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiU3RCU3RCU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlMkMlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyMCglMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlMkMlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMlYlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyYm9sZCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlN0QlNUQlMkMlMjJzZWxlY3Rpb25zJTIyJTNBJTVCJTVEJTdEJTJDJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjJpcnR1YWwlMjAlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlMkMlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMkUlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMm1hcmslMjIlMkMlMjJ0eXBlJTIyJTNBJTIyYm9sZCUyMiUyQyUyMmRhdGElMjIlM0ElN0IlN0QlN0QlNUQlMkMlMjJzZWxlY3Rpb25zJTIyJTNBJTVCJTVEJTdEJTJDJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjJudmlyb25tZW50JTIwYmFzZWQlMjBvbiUyMCUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTJDJTIyc2VsZWN0aW9ucyUyMiUzQSU1QiU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyQiUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybWFyayUyMiUyQyUyMnR5cGUlMjIlM0ElMjJib2xkJTIyJTJDJTIyZGF0YSUyMiUzQSU3QiU3RCU3RCU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlMkMlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMmFieWxvbi4lMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlMkMlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMmpzJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMmJvbGQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTdEJTVEJTJDJTIyc2VsZWN0aW9ucyUyMiUzQSU1QiU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyKSUyMGlzJTIwYSUyMHJlY29uZmlndXJhYmxlJTIwbW9kZWwtZHJpdmVuJTIwdmlydHVhbCUyMGVudmlyb25tZW50JTIwYXBwbGljYXRpb24lMjBiYXNlZCUyMG9uJTIwJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlMkMlMjJzZWxlY3Rpb25zJTIyJTNBJTVCJTVEJTdEJTVEJTJDJTIya2V5JTIyJTNBJTIyMmRjMDIyODQyOTk0NGQ1YWFkOWE3Y2M3ZWZhNTlkMDMlMjIlN0QlMkMlN0IlMjJvYmplY3QlMjIlM0ElMjJpbmxpbmUlMjIlMkMlMjJ0eXBlJTIyJTNBJTIybGluayUyMiUyQyUyMmlzVm9pZCUyMiUzQWZhbHNlJTJDJTIyZGF0YSUyMiUzQSU3QiUyMnJlZiUyMiUzQSU3QiUyMmtpbmQlMjIlM0ElMjJ1cmwlMjIlMkMlMjJ1cmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnd3dy5iYWJ5bG9uanMuY29tJTJGJTIyJTdEJTdEJTJDJTIybm9kZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJ0ZXh0JTIyJTJDJTIybGVhdmVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIybGVhZiUyMiUyQyUyMnRleHQlMjIlM0ElMjJCYWJ5bG9uLmpzJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlNUQlMkMlMjJzZWxlY3Rpb25zJTIyJTNBJTVCJTVEJTdEJTVEJTJDJTIya2V5JTIyJTNBJTIyMmM5YzU5YzU2M2ZmNGE5YTg3ZTRkOWYwNjNkZjg3NDclMjIlN0QlNUQlMkMlMjJrZXklMjIlM0ElMjIyOWU5YzAxMzMyY2E0ZmNkYWExMWQ1NWZmMDgwMTY4ZiUyMiU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMnRleHQlMjIlMkMlMjJsZWF2ZXMlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJsZWFmJTIyJTJDJTIydGV4dCUyMiUzQSUyMiUyQyUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTJDJTIyc2VsZWN0aW9ucyUyMiUzQSU1QiU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIwJTIyJTJDJTIybWFya3MlMjIlM0ElNUIlN0IlMjJvYmplY3QlMjIlM0ElMjJtYXJrJTIyJTJDJTIydHlwZSUyMiUzQSUyMmJvbGQlMjIlMkMlMjJkYXRhJTIyJTNBJTdCJTdEJTdEJTVEJTJDJTIyc2VsZWN0aW9ucyUyMiUzQSU1QiU1RCU3RCUyQyU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyYSUyMGNvbXBsZXRlJTIwSmF2YVNjcmlwdCUyMGZyYW1ld29yayUyMGFuZCUyMGdyYXBoaWNzJTIwZW5naW5lJTIwZm9yJTIwYnVpbGRpbmclMjAzRCUyMGFwcGxpY2F0aW9ucyUyMHdpdGglMjBIVE1MNSUyMGFuZCUyMCUyMiUyQyUyMm1hcmtzJTIyJTNBJTVCJTVEJTJDJTIyc2VsZWN0aW9ucyUyMiUzQSU1QiU1RCU3RCU1RCUyQyUyMmtleSUyMiUzQSUyMjdjMDgxNWIxOTBjOTQzZjlhMGE3ODY0N2QwZmI4NGY2JTIyJTdEJTJDJTdCJTIyb2JqZWN0JTIyJTNBJTIyaW5saW5lJTIyJTJDJTIydHlwZSUyMiUzQSUyMmxpbmslMjIlMkMlMjJpc1ZvaWQlMjIlM0FmYWxzZSUyQyUyMmRhdGElMjIlM0ElN0IlMjJyZWYlMjIlM0ElN0IlMjJraW5kJTIyJTNBJTIydXJsJTIyJTJDJTIydXJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZ3d3cua2hyb25vcy5vcmclMkZ3ZWJnbCUyRiUyMiU3RCU3RCUyQyUyMm5vZGVzJTIyJTNBJTVCJTdCJTIyb2JqZWN0JTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyV2ViR0wlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlNUQlMkMlMjJrZXklMjIlM0ElMjI5ODgwYTg2ODY5ZTA0ODJkOTdkZGZjNDRmYWFhNWNmYSUyMiU3RCU1RCUyQyUyMmtleSUyMiUzQSUyMjU4NWQ4YjA1MjVhZTQ4MWNhYjhkYWQ2N2RjMWQ5MDNlJTIyJTdEJTJDJTdCJTIyb2JqZWN0JTIyJTNBJTIydGV4dCUyMiUyQyUyMmxlYXZlcyUyMiUzQSU1QiU3QiUyMm9iamVjdCUyMiUzQSUyMmxlYWYlMjIlMkMlMjJ0ZXh0JTIyJTNBJTIyJTIwKFdlYiUyMEdyYXBoaWNzJTIwTGlicmFyeSkuJTIwQmFieWxvbi5qcyUyMGVuYWJsZXMlMjB0byUyMGxvYWQlMjBhbmQlMjBkcmF3JTIwM0QlMjBvYmplY3RzJTJDJTIwbWFuYWdlJTIwdGhlc2UlMjAzRCUyMG9iamVjdHMlMkMlMjBjcmVhdGUlMjBhbmQlMjBtYW5hZ2UlMjBzcGVjaWFsJTIwZWZmZWN0cyUyQyUyMHBsYXklMjBhbmQlMjBtYW5hZ2UlMjBzcGF0aWFsaXplZCUyMHNvdW5kcyUyQyUyMGNyZWF0ZSUyMGdhbWVwbGF5cyUyMGFuZCUyMG1vcmUuJTIwQmFieWxvbi5qcyUyMGxpYnJhcnklMjBpcyUyMGZyZWUlMjB0byUyMHVzZSUyQyUyMHRodXMlMjBlbmFibGluZyUyMGFsc28lMjBkaWRhY3RpYyUyMHVzZS4lMjAlMjIlMkMlMjJtYXJrcyUyMiUzQSU1QiU1RCUyQyUyMnNlbGVjdGlvbnMlMjIlM0ElNUIlNUQlN0QlNUQlMkMlMjJrZXklMjIlM0ElMjJjZmFiMTM3NTE3M2U0YzdiYWIzNGE4OGI3MTg1NjlhOSUyMiU3RCU1RCUyQyUyMmtleSUyMiUzQSUyMjAwYTI3OGE1MjlhYjQxOWFiYTE4ZDVmNmI3OTljNjQ5JTIyJTdEJTVEJTJDJTIya2V5JTIyJTNBJTIyMDczMDg5NTg5YmM5NGE0MmExMWViYjA2M2U4Y2JlMzglMjIlN0Q="><span data-offset-key="cfab1375173e4c7bab34a88b718569a9:0">
+(Web Graphics Library). Babylon.js enables to load and draw 3D objects,
+manage these 3D objects, create and manage special effects, play and
+manage spatialized sounds, create gameplays and more. </span></span><span style="font-weight: normal;"></span><span style="font-weight: normal;"><br>
+      <br></span><span style="font-weight: normal;">Related
+publications:</span><span style="font-weight: normal;"></span><br style="font-weight: normal;">
+      <ul>
+        <li><span style="font-weight: normal;"><a target="_blank" href="publ.html#2013_KadarTerkajSacco">Kádár B, Terkaj W, Sacco M
+(2013)</a> Semantic Virtual Factory supporting interoperable modelling
+and evaluation of production systems. </span><br>
+        </li>
+        <li><span style="font-weight: normal;"><a target="_blank" href="publ.html#2015_TerkajTolioUrgo">Terkaj W, Tolio T, Urgo M (2015)</a>
+A virtual factory approach for in situ simulation to support production
+and maintenance planning.&nbsp;</span></li>
+        
+        <li style="font-weight: normal;"><a target="_blank" href="publ.html#2017_TerkajVigano">Terkaj
+W, Viganò GP (2017)</a> Semantic GIOVE-VF: an Ontology-based Virtual
+Factory Tool</li>
+        <li style="font-weight: normal;"><a target="_blank" href="publ.html#2022_UrgoTerkajMondelliniColombo">Urgo M, Terkaj, Mondellini M, Colombo G (2022)</a> Design of
+serious games in engineering education: An application to the
+configuration and analysis of manufacturing systems.</li>
+        <li style="font-weight: normal;"><a href="publ.html#2022_BerardinucciColomboLorussoManziniTerkajUrgo" target="_blank">Berardinucci F, Colombo G, Lorusso M, Manzini M, Terkaj W, Urgo M (2022)</a> A learning workflow based on an integrated digital toolkit to support education in manufacturing system engineering<br>
+        </li>
+
+
+      </ul>
+      <br>
+      <big><big><small><a name="ExpressToOwl"></a><span style="text-decoration: underline;">ExpressToOwl</span></small></big></big><br>
+      <br>
+      <span style="font-weight: normal;">C++ tool to automatically
+convert </span><span style="font-weight: normal;">an EXPRESS schema
+into an OWL ontology. The tool was mainly applied to generate the
+ifcOWL ontology
+(</span><a style="font-weight: normal;" href="http://www.buildingsmart-tech.org/future/linked-data/linked-data" target="_blank">Linked Data Working Group</a><span style="font-weight: normal;">), but it can be used to convert any
+EXPRESS schema.</span> <span style="font-weight: normal;">In case of
+ifcOWL, the tool includes the option to convert also a subset of WHERE
+rules.</span><br>
+      <ul>
+        <li style="font-weight: normal;"><a target="_blank" href="https://www.researchgate.net/profile/Walter_Terkaj/publication/324452762_ExpressToOwl/data/5ace3981a6fdcc87840cc3e0/ExpressToOwl.zip">download
+ExpressToOwl as zip file</a><br>
+        </li>
+        <li><a href="tools/ExpressToOwl/readme.txt" target="_blank"><span style="font-weight: normal;">readme</span></a></li>
+      </ul>
+      <span style="font-weight: normal;">More details can be found in
+readme file and</span><span style="font-weight: normal;"> related </span><span style="font-weight: normal;">publications:</span>
+      <ul>
+        <li style="font-weight: normal;"><a href="publ.html#2015_TerkajSojic" target="_blank">Terkaj W, Sojic A
+(2015)</a>
+Ontology-based Representation of
+IFC
+EXPRESS rules: an enhancement of the ifcOWL ontology.</li>
+        <li style="font-weight: normal;"><a href="publ.html#2016_PauwelsTerkaj" target="_blank">Pauwels
+P, Terkaj W (2016)</a> EXPRESS to OWL for construction industry:
+Towards a
+recommendable and usable ifcOWL ontology</li>
+        <li style="font-weight: normal;"><a href="publ.html#2017_PauwelsKrijnenTerkajBeetz" target="_blank">Pauwels
+P, Krijnen T, Terkaj W, Beetz J (2017)</a> Enhancing the ifcOWL
+ontology with an alternative representation for geometric data.</li>
+      </ul>
+      <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+ </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+</body></html>
